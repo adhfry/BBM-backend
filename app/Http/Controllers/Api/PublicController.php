@@ -12,10 +12,10 @@ class PublicController extends Controller
     public function about()
     {
         $data = [
-            'app_name'    => 'BBM - Belajar Bahasa Madura',
-            'version'     => '2.0',
-            'description' => 'Platform Pembelajaran dan Pelestarian Bahasa Madura Berbasis Teknologi Modern dan Kecerdasan Buatan.',
-            'author'      => 'Ahda Firly Barori',
+            'app_name'    => config('app.name'),
+            'version'     => config('app.version'),
+            'description' => config('app.description'),
+            'author'      => config('app.author'),
         ];
         return apiSuccess($data, 'Berhasil mengambil informasi aplikasi.');
     }

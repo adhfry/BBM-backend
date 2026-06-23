@@ -123,4 +123,8 @@ return [
         'store'  => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'version'         => env('API_VERSION', '1.0.0'),
+    'author'          => env('APP_AUTHOR', 'Ahda Firly Barori'),
+    'description'     => env('APP_DESCRIPTION', 'Platform Pembelajaran dan Pelestarian Bahasa Madura Berbasis Teknologi Modern dan Kecerdasan Buatan.'),
+
 ];
